@@ -102,54 +102,48 @@ export default {
 
 <style scoped>
 .filters-bar {
-  background: #f8fafc;
-  border-bottom: 1px solid #e2e8f0;
-  padding: 0.75rem 0;
-  position: sticky;
-  top: 70px;
-  z-index: 90;
+  /* No background, border, or sticky — parent handles placement */
 }
 
 .filters-container {
-  max-width: 1600px;
-  margin: 0 auto;
-  padding: 0 2rem;
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 0.5rem;
 }
 
 .filters-grid {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 0.5rem;
+  flex-wrap: wrap;
   flex: 1;
 }
 
 .filter-group {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.375rem;
 }
 
 .filter-group label {
-  font-size: 0.75rem;
+  font-size: 0.6875rem;
   font-weight: 600;
   color: #64748b;
   white-space: nowrap;
 }
 
 .filter-select {
-  padding: 0.4rem 0.75rem;
-  border: 1px solid #cbd5e1;
+  padding: 0.3rem 0.5rem;
+  border: 1px solid #e2e8f0;
   border-radius: 6px;
-  font-size: 0.813rem;
+  font-size: 0.8125rem;
   color: #0f172a;
   background: white;
   cursor: pointer;
   transition: all 0.2s;
   font-weight: 500;
-  min-width: 140px;
+  height: 32px;
+  min-width: 120px;
 }
 
 .filter-select:hover {
@@ -159,27 +153,29 @@ export default {
 .filter-select:focus {
   outline: none;
   border-color: #3b82f6;
-  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.1);
 }
 
 .reset-filters-btn {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0.4rem;
-  background: white;
+  padding: 0.3rem;
+  background: transparent;
   border: 1px solid #e2e8f0;
   border-radius: 6px;
-  color: #64748b;
+  color: #94a3b8;
   cursor: pointer;
   transition: all 0.2s;
   flex-shrink: 0;
+  height: 32px;
+  width: 32px;
 }
 
 .reset-filters-btn:hover:not(:disabled) {
-  background: #f8fafc;
+  background: #f1f5f9;
   border-color: #cbd5e1;
-  color: #0f172a;
+  color: #64748b;
 }
 
 .reset-filters-btn:disabled {
@@ -188,7 +184,7 @@ export default {
 }
 
 .reset-filters-btn svg {
-  width: 18px;
-  height: 18px;
+  width: 16px;
+  height: 16px;
 }
 </style>

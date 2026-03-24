@@ -16,6 +16,7 @@ Use the Task tool with these specialized subagents for appropriate tasks:
 
 ### Skills
 - **backend-api-test** skill: Use when writing or modifying tests in `tests/backend` directory with pytest and FastAPI TestClient
+- **saas-redesign** skill: Redesign the Vue 3 UI into a modern SaaS-style interface with vertical sidebar navigation, consistent spacing, and a polished professional look
 
 ### MCP Tools
 - **ALWAYS use GitHub MCP tools** (`mcp__github__*`) for ALL GitHub operations
